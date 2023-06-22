@@ -28,12 +28,15 @@
       src="https://kit.fontawesome.com/037758444f.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Typeit -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <!-- CSS -->
     <link rel=" stylesheet" href="css/style.css" />
     <!-- Javascript -->
     <script type="module" src="src/main.js"></script>
     <script type="module" src="src/projects.js"></script>
     <script type="module" src="src/active_menu.js"></script>
+    <script type="module" src="src/type.js"></script>
   </head>
   <!-- Header -->
   <header class="header">
@@ -53,7 +56,7 @@
         <li><a class="header__menu__item" href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <button class="header__toggle" aria-label="navigation menu toggle">
+    <button class="header__toggle">
       <i class="fa-solid fa-bars"></i>
     </button>
   </header>
@@ -61,13 +64,13 @@
   <main>
     <!-- *SECTION -Home -->
     <section id="home">
-      <div class="home__container">
+      <div class="home__container max-container">
         <img
           class="home__avatar"
           src="images/fevicon.ico"
           alt="Gong's profile"
         />
-        <h2 class="home__title">
+        <h2 class="home__title" aria-label="Hello👋,I'm Front-End Developer">
           Hello👋<br />
           I&#39;m
           <strong class="home__title--strong">Front-End Developer</strong>, Gong
